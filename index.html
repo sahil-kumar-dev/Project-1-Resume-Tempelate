@@ -1,193 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Roboto&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<title>Resume Template</title>
 </head>
 <style>
-	:root{
-		--primary-color:#0085a3;
-	}
-	/* *{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	} */
-	body{
-		display: flex;
-		margin: 0;
-		padding: 0 15rem;
-
-	}
-	.left{
-		width: 30%;
-		background-color: var(--primary-color);
-		color: white;
-		padding: 3.5rem;
-		padding-right: 0;
-		letter-spacing: 1px;
-	}
-
-	.image{
-		position: relative;
-		left: 3rem;
-	}
-
-	.image img{
-		width: 18rem;
-		aspect-ratio: 1/1;
-		object-fit: cover;
-	}
-
-	.contact{
-		margin-top: 2rem;
-	}
-
-	.more-details{
-		margin: 2.5rem 0;
-	}
-
-	.more-details h3{
-		margin-bottom: 0;
-	}
-
-	.expertise ul li{
-		margin: 1rem 0;
-		list-style-type: square;
-	}
-
-	.language{
-		margin: 3rem 0;
-	}
-
-	.language h3{
-		margin-bottom: 0.8rem;
-	}
-
-	.meter{
-		width: 50%;
-		background-color: #ffffff;
-		height: 7px;
-		border-radius: 15px;
-	}
-
-	.range{
-		width: var(--width);
-		height: inherit;
-		border-radius: inherit;
-		background-color: skyblue;
-	}
 	
-	.reference h3,h4{
-		margin-bottom: 0;
-	}
-
-	.right{
-		width: 70%;
-		padding-left: 3rem;
-	}
-
-	.name{
-		position: relative;
-		margin-left: 3rem;
-		color: var(--primary-color);
-		letter-spacing: 1px;
-	}
-
-	.name h1{
-		margin-bottom: 0;
-		font-size: 5rem;
-	}
 </style>
+
 <body>
-	<div class="left">
-		<div class="image">
-			<img src="./assests/profileImage.jpg" alt="">
+	<h1 class="heading">Resume Template</h1>
+	<main>
+		<div class="left">
+			<div class="image">
+				<img src="./assests/profileImage.jpg" alt="">
+			</div>
+			<section class="contact">
+				<h2>Contact</h2>
+				<div class="more-details">
+					<h3>Phone</h3>
+					<small>+91 999999999</small>
+				</div>
+				<div class="more-details">
+					<h3>Email</h3>
+					<small>example@gmail.com</small>
+				</div>
+				<div class="more-details">
+					<h3>Address</h3>
+					<small>123, California, New York</small>
+				</div>
+			</section>
+			<section class="expertise">
+				<h2>Expertise</h2>
+				<ul>
+					<li>Lorem.</li>
+					<li>Maxime?</li>
+					<li>Quidem!</li>
+					<li>Rerum.</li>
+					<li>Delectus.</li>
+					<li>Facere!</li>
+					<li>Id!</li>
+				</ul>
+			</section>
+			<section class="language">
+				<h2>Language</h2>
+				<div class="lang">
+					<h3>English</h3>
+					<div class="meter">
+						<div class="range" style="--width:70%"></div>
+					</div>
+				</div>
+				<div>
+					<h3>Hindi</h3>
+					<div class="meter">
+						<div class="range" style="--width:90%"></div>
+					</div>
+				</div>
+				<div>
+					<h3>French</h3>
+					<div class="meter">
+						<div class="range" style="--width:40%"></div>
+					</div>
+				</div>
+			</section>
+			<section class="reference">
+				<h2>Reference</h2>
+				<div class="">
+					<h3>Jhone Doe</h3>
+					<small>Senion Deveopler</small>
+				</div>
+				<div class="">
+					<h4>Phone</h4>
+					<small>+91000000000</small>
+				</div>
+			</section>
 		</div>
-		<section class="contact">
-			<h2>Contact</h2>
-			<div class="more-details">
-				<h3>Phone</h3>
-				<small>+91 999999999</small>
-			</div>
-			<div class="more-details">
-				<h3>Email</h3>
-				<small>example@gmail.com</small>
-			</div>
-			<div class="more-details">
-				<h3>Address</h3>
-				<small>123, California, New York</small>
-			</div>
-		</section>
-		<section class="expertise">
-			<h2>Expertise</h2>
-			<ul>
-				<li>Lorem.</li>
-				<li>Maxime?</li>
-				<li>Quidem!</li>
-				<li>Rerum.</li>
-				<li>Delectus.</li>
-				<li>Facere!</li>
-				<li>Id!</li>
-			</ul>
-		</section>
-		<section class="language">
-			<h2>Language</h2>
-			<div class="lang">
-				<h3>English</h3>
-				<div class="meter">
-					<div class="range" style="--width:70%"></div>
+		<div class="right">
+			<section class="name">
+				<h1>LOKIE <br> FERGUSON</h1>
+				<h3 class="role">FULL STACK DEVELOPER</h3>
+			</section>
+			<section class="about">
+				<h2 style="color: var(--secondy-color);">About me</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta adipisci magni neque nam doloremque
+					atque nemo laboriosam recusandae voluptatibus iusto quia itaque assumenda fuga voluptate inventore
+					dolorem, distinctio quod vel corporis, dolorum numquam accusantium facere incidunt! Quo culpa
+					blanditiis
+					quod.</p>
+			</section>
+			<section class="experience">
+				<h2 style="color: var(--secondy-color);">Work Experience</h2>
+				<div class="experience-details">
+					<h4>Company Name 2017-2022</h4>
+					<p class="job-role">JOB ROLE</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, numquam similique. Sunt, error
+						quaerat. Error laborum earum, nemo nostrum accusamus amet eaque deserunt officiis illum atque
+						consectetur eum eius eveniet!</p>
 				</div>
-			</div>
-			<div>
-				<h3>Hindi</h3>
-				<div class="meter">
-					<div class="range" style="--width:90%"></div>
+				<div class="experience-details">
+					<h4>Company Name 2017-2022</h4>
+					<p class="job-role">JOB ROLE</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, numquam similique. Sunt,
+						errorquaerat. Error laborum earum, nemo nostrum accusamus amet eaque deserunt officiis illum
+						atqueconsectetur eum eius eveniet!</p>
 				</div>
-			</div>
-			<div>
-				<h3>French</h3>
-				<div class="meter">
-					<div class="range" style="--width:40%"></div>
+			</section>
+			<section class="education">
+				<h2 style="color: var(--secondy-color);">Education</h2>
+				<div class="education-details">
+					<div class="edu-left">
+						<h3 class="year"><b>2015</b></h3>
+						<i>University Name</i>
+						<h3 class="degree">Your Degree</h3>
+					</div>
+					<div class="edu-right">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa, ea officiis veritatis
+							distinctio eaque totam quasi voluptatem saepe a, doloremque cum. Voluptatibus, ducimus sunt?
+						</p>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="reference">
-			<h2>Reference</h2>
-			<div class="">
-				<h3>Jhone Doe</h3>
-				<small>Senion Deveopler</small>
-			</div>
-			<div class="">
-				<h4>Phone</h4>
-				<small>+91000000000</small>
-			</div>
-		</section>
-	</div>
-	<div class="right">
-		<section class="name">
-			<h1>LOKIE <br> FERGUSON</h1>
-			<h3 class="role">FULL STACK DEVELOPER</h3>
-		</section>
-		<section class="about">
-			<h2>About me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta adipisci magni neque nam 				doloremque atque nemo laboriosam recusandae voluptatibus iusto quia itaque assumenda fuga 				voluptate inventore dolorem, distinctio quod vel corporis, dolorum numquam accusantium 					facere incidunt! Quo culpa blanditiis quod.</p>
-		</section>
-		<section class="experience">
-			<h2>Work Experience</h2>
-			<div class="experience-details">
-				<h4>Company Name 2017-2022</h4>
-				<p class="job-role">JOB ROLE</p>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, numquam similique. Sunt, error quaerat. Error laborum earum, nemo nostrum accusamus amet eaque deserunt officiis illum atque consectetur eum eius eveniet!</p>
-			</div>
-			<div class="experience-details">
-				<h4>Company Name 2017-2022</h4>
-				<p class="job-role">JOB ROLE</p>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, numquam similique. Sunt, error quaerat. Error laborum earum, nemo nostrum accusamus amet eaque deserunt officiis illum atque consectetur eum eius eveniet!</p>
-			</div>
-		</section>
-	</div>
+				<div class="education-details">
+					<div class="edu-left">
+						<h3 class="year"><b>2015</b></h3>
+						<i>University Name</i>
+						<h3 class="degree">Your Degree</h3>
+					</div>
+					<div class="edu-right">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque culpa, ea officiis veritatis
+							distinctio eaque totam quasi voluptatem saepe a, doloremque cum. Voluptatibus, ducimus sunt?
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="projects">
+				<h2 style="color: var(--secondy-color);">Projects</h2>
+				<div class="project-details">
+					<h3>PROJECT 1</h3>
+					<small>Tech Stack</small>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolor illum veniam
+						blanditiis commodi cupiditate minima inventore dolore laborum? Pariatur maxime voluptas
+						voluptatem voluptatum voluptates.</p>
+				</div>
+				<div class="project-details">
+					<h3>PROJECT 1</h3>
+					<small>Tech Stack</small>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores dolor illum veniam
+						blanditiis commodi cupiditate minima inventore dolore laborum? Pariatur maxime voluptas
+						voluptatem voluptatum voluptates.</p>
+				</div>
+			</section>
+		</div>
+	</main>
 </body>
+
 </html>
